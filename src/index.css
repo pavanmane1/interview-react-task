@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Open+Sans:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+:root{
+  --body-bg: 240 241 247;
+}
+body {
+  margin: 0;
+
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding:0;
+  scroll-behavior: smooth;
+  background-color: rgb(var(--body-bg));
+}
+
+.bg-img{
+  /* background-image: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); */
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: #000;
+}
+.bg-login{
+  background-color: #200432;
+}
+.login-form{
+  font-family: 'Libre Baskerville', serif;
+}
+
+.heading-1{
+  position: relative;
+}
+::placeholder{
+  color: #7e7a7a3f;
+}
+.bg-back{
+  background-color: #ff0000 !important;
+  color: #fff !important;
+}
+.bg-back:disabled{
+  background-color: #ff0000a8 !important;
+}
+.profile-pic {
+  width: 200px;
+  max-height: 200px;
+  display: inline-block;
+}
+
+.file-upload {
+  display: none;
+}
+.circle {
+  border-radius: 100% !important;
+  overflow: hidden;
+  width: 128px;
+  height: 128px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 72px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.p-image {
+position: absolute;
+top: 167px;
+right: 30px;
+color: #666666;
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+font-size: 1.2em;
+}
+
+.upload-button:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+color: #999;
+}

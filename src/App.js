@@ -3,7 +3,7 @@ import './App.css';
 import { useRoutes } from "react-router-dom";
 
 import { useDispatch } from 'react-redux';
-import routes from './RoutesConfig/routesConfig/temp';
+import routes from './RoutesConfig/routesConfig/RoutesDetails.jsx';
 import { restoreSession } from './features/authSlice';
 import LoadingSpinner from './component/LoadingSpinner';
 import { ToastContainer } from 'react-toastify';

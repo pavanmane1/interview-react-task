@@ -3,7 +3,7 @@ import userService from '../../services/user/userService';
 import { handleAsyncActions } from '../../utils/functions/reduxSlice';
 
 
-// Async thunk to fetch products
+
 export const getAllUsers = createAsyncThunk(
     'user/getAllProducts',
     async (_, { rejectWithValue }) => {
@@ -19,7 +19,6 @@ export const getAllUsers = createAsyncThunk(
     }
 );
 
-// Async thunk to fetch products
 export const getcountry = createAsyncThunk(
     'user/getcountry',
     async (_, { rejectWithValue }) => {
@@ -35,7 +34,6 @@ export const getcountry = createAsyncThunk(
     }
 );
 
-// Async thunk to fetch products
 export const getState = createAsyncThunk(
     'user/getState',
     async (countyId, { rejectWithValue }) => {
@@ -171,12 +169,7 @@ const userSlice = createSlice({
 
     }
 });
-// At the end of userSlice.js
-export const selectCurrentUser = (state) => state.user.currentUser;
-export const selectFormErrors = (state) => state.user.errors;
-export const selectFormError = (state) => state.user.formError;
-export const selectIsFormValid = (state) => state.user.isFormValid;
-export const selectIsSubmitting = (state) => state.user.isSubmitting;
+
 
 export const { updatePersonalDetails,
     updateCountryDetails,

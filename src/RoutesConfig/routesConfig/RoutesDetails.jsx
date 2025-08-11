@@ -20,7 +20,7 @@ const routes = [
             { path: '/dashboard', element: <PrivateRoute element={<Dashboard />} /> },
             { path: '/Stepperform', element: <PrivateRoute element={<Stepperform />} /> },
             { path: '/List', element: <PrivateRoute element={<List />} allowedRoles={['Admin']} /> },
-            { path: '/Product', element: <PrivateRoute element={<ListProduct />} allowedRoles={['seller']} /> },
+            { path: '/Product', element: <PrivateRoute element={<ListProduct />} /> },
             { path: '/Add-product', element: <PrivateRoute element={<Addproduct />} /> }
 
         ]

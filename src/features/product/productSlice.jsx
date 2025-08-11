@@ -7,6 +7,7 @@ import { handleAsyncActions } from '../../utils/functions/reduxSlice';
 export const getAllProducts = createAsyncThunk(
     'products/getAllProducts',
     async (_, { rejectWithValue }) => {
+
         try {
             const data = await productService.getAllProducts();
             return data;
@@ -23,7 +24,7 @@ export const getProductsById = createAsyncThunk(
     'products/getProductsById',
     async (_, { rejectWithValue }) => {
         try {
-            const data = await productService.getAllProducts();
+            const data = await productService.getProductsByPage();
             return data;
         } catch (error) {
             // Return error message for reducer

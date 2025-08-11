@@ -23,6 +23,7 @@ const productService = {
             throw error;
         }
     },
+
     addProduct: async (productData) => {
         try {
             const storedUser = sessionStorage.getItem("userInfo");
